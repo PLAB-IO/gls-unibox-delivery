@@ -45,12 +45,12 @@ class Parcel implements ParcelInterface
 
     public function firstMatrix()
     {
-        $this->response->T8902;
+        return $this->response->T8902;
     }
 
     public function secondMatrix()
     {
-        $this->response->T8903;
+        return $this->response->T8903;
     }
 
     public function uniMatrix()

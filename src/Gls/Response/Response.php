@@ -55,12 +55,12 @@ abstract class Response
             $key = $keyValue[0];
 
             if ('T8902' === $key) {
-                $this->T8902 = str_pad($this->T8902, 123, ' ', STR_PAD_RIGHT);
+                $this->T8902 = str_pad($keyValue[1], 123, ' ', STR_PAD_RIGHT);
                 continue;
             }
 
             if ('T8903' === $key) {
-                $this->T8903 = str_pad($this->T8903, 106, ' ', STR_PAD_RIGHT);
+                $this->T8903 = str_pad($keyValue[1], 106, ' ', STR_PAD_RIGHT);
                 continue;
             }
             
