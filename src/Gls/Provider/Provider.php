@@ -87,7 +87,7 @@ class Provider
             + (int)$second
         );
 
-        $padLen = 14 - strlen($start);
+        $padLen = 10 - strlen($start);
         
         return
             $start
