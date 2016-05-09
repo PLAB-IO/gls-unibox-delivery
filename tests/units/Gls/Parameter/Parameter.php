@@ -85,10 +85,7 @@ class Parameter extends test
             ->isIdenticalTo($result)
         ;
     }
-
-    /**
-     * @engine inline
-     */
+    
     public function testIsValid()
     {
         $this
