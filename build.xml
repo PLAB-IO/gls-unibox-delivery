@@ -47,4 +47,13 @@
         <echo msg="Current version app is ${version.number}" />
     </target>
 
+    <!-- ============================================  -->
+    <!-- Target: project targets                       -->
+    <!-- ============================================  -->
+    <target name="atoum-engine-checker">
+	<echo msg="Search if engine line have been commited" />
+	<exec command="grep -Rni '@engine inline' tests" escape="false" passthru="true" />
+	<exec command="grep -Rni '@engine inline' tests | test `wc -l` -eq 0 &amp;&amp; (exit 0) || (exit 1)" checkreturn="true" escape="false" passthru="true" />
+    </target>
+
 </project>
